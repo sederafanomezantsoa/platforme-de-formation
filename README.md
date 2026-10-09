@@ -82,15 +82,16 @@ The project follows a frontend/backend organization.
 
 ```text
 exercice_liantsoa/
-│
+│── index.php
 ├── frontend/
-│   ├── index.php
 │   ├── login.php
 │   ├── singup.php
 │   ├── admin.php
+|   |── logout.php
 │   │
 │   ├── css/
 │   │   └── style.css
+            style1.css
 │   │
 │   └── js/
 │       └── script.js

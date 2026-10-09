@@ -1,8 +1,8 @@
 <?php
 $host ="127.0.0.1";
 $dbname = "platforme_formation";
-$user = "root";
-$pass = "TJ @sedera";
+$user = "";
+$pass = "";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);
