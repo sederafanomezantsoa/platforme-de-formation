@@ -8,13 +8,13 @@ function requireLogin():void {
 }
 function requireRole(string $role){
 	requireLogin();
-	if($role == "ADMIN"){
+	if($_SESSION["role"] == $role){
 		return 1;
 	}
-	if($role == "STUDENT"){
+	else if($_SESSION["role"]  == $role){
                 return 3;
         }
-        if($role == "TEACHER"){
+        else if($_SESSION["role"]  == $role){
                 return 2;
         }
 

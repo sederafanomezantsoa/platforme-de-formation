@@ -5,7 +5,9 @@ require_once __DIR__. "/../backend/controllers/cours.controllers.php";
 require_once __DIR__. "/../backend/controllers/users.controllers.php";
 //require_once __DIR__. "/../backend/model/cours.php";
 
-requireAdmin();
+if(!requireAdmin()){
+    header("location: /index.php");
+};
 $coursController = new CoursController($pdo);
 $usersController = new UserController($pdo);
 $resultatRecherche=[];
