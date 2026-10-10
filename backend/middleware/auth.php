@@ -17,7 +17,6 @@ function requireRole(string $role){
         else if($_SESSION["role"]  == $role){
                 return 2;
         }
-
 }
 function requireAdmin():bool
 {
