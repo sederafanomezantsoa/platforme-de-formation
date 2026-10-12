@@ -8,7 +8,7 @@ $userController = new UserController($pdo);
 // 	header("location: /frontend/login.php");
 // 	exit;
 // }
-$details = $userController->getDetailsUser($_SESSION["id_user"]);
+//$details = $userController->getDetailsUser($_SESSION["id_user"]);
 //header('Content-Type: application/json');
 ?>
 <!DOCTYPE html>

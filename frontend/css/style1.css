@@ -572,7 +572,9 @@
     align-items: flex-end;
     gap: 14px;
 }
-
+#search-user{
+    background-color: #4338ca;
+}
 .search-field {
     flex: 1;
 }
@@ -768,5 +770,131 @@
 
     .admin-table {
         min-width: 560px;
+    }
+}
+
+/* ===== AJOUTER UN ADMINISTRATEUR ===== */
+
+.add-admin-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    padding: 30px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+.add-admin-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: #eef2ff;
+    color: #4338ca;
+    font-size: 28px;
+}
+
+.add-admin-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.add-admin-content h3 {
+    margin: 0 0 8px;
+    color: #172033;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.add-admin-content > p {
+    margin: 0 0 24px;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.add-admin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 520px;
+}
+
+.add-admin-form .admin-field {
+    width: 100%;
+}
+
+.add-admin-form .admin-field input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    background: #f8fafc;
+    color: #172033;
+    font-size: 15px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.add-admin-form .admin-field input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+    background: #ffffff;
+}
+
+.add-admin-form .admin-field small {
+    display: block;
+    margin-top: 8px;
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.promote-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 9px;
+    background: #4338ca;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.promote-button:hover {
+    background: #3730a3;
+    transform: translateY(-1px);
+}
+
+.promote-button:focus-visible {
+    outline: 3px solid #a5b4fc;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .add-admin-card {
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+    }
+
+    .add-admin-form {
+        width: 100%;
+    }
+
+    .promote-button {
+        width: 100%;
     }
 }

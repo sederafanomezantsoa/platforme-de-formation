@@ -89,4 +89,10 @@ class User
 	$stmt->execute([$id_user]);
 	return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+    public function addAdmin(int $id_user){
+	$sql = "UPDATE users SET role = 'ADMIN' WHERE users.id_user = ?";
+	$stmt =  $this->pdo->prepare($sql);
+	$stmt->execute([$id_user]);
+	return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
 }
